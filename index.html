@@ -885,7 +885,7 @@
 // ── SONGS DATA ──
 const songs = [
   { name: 'Yadav Ji',  desc: 'Dudhwala',        audio: 'yadavji.mp3',   img: 'https://raw.githubusercontent.com/shusui-owner-ryuma/shusui-owner-ryuma/main/yadavji.jpg',   emoji: '' },
-  { name: 'Rao Sahb',  desc: 'Anthem',       audio: 'raosahb.mp3',   img: 'raosahb.jpg',   emoji: '' },
+  { name: 'Rao Sahb',  desc: 'Anthem',       audio: 'https://raw.githubusercontent.com/shusui-owner-ryuma/shusui-owner-ryuma/main/raosahb.mp3',   img: 'https://raw.githubusercontent.com/shusui-owner-ryuma/shusui-owner-ryuma/main/raosahb.jpg',   emoji: '' },
   { name: 'Haaye Re',  desc: 'Love line',   audio: 'haayere.mp3',   img: 'haayere.jpg',   emoji: '' },
   { name: 'Bairan',    desc: 'Bhabhi ji ',          audio: 'bairan.mp3',    img: 'bairan.jpg',    emoji: '' },
   { name: 'Moonlight', desc: 'Aestheticc',  audio: 'moonlight.mp3', img: 'moonlight.jpg', emoji: '' },
@@ -966,7 +966,7 @@ function playSong(idx, auto) {
 function setActive(idx) {
   songElements.forEach((el, i) => {
     el.classList.toggle('active', i === idx);
-    el.querySelector('.song-btn').textContent = i === idx ? '||' : '▶';
+    el.querySelector('.song-btn').textContent = i === idx ? '| |' : '▶';
     if(i !== idx) {
       const bar = el.querySelector('.song-progress-bar');
       if(bar) bar.style.width = '0%';
